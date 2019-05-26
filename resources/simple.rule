@@ -1,0 +1,35 @@
+
+rule simple;
+
+@FileExtension {
+	.sim
+}
+
+@Header {
+
+from simple.core.Object
+from simple.debugging.Assertion
+
+} 
+
+@DatatTypes {
+	int => Number
+	long => Number
+	double => DoubleNumber
+	float => DoubleNumber
+	string => String
+}
+
+Number
+	: ('0'..'9')*
+	;
+
+DoubleNumber
+	: ('0'..'9') '.'? ('0'..'9')*
+	;
+
+String
+	: ["] ( ~["\r\n\\] | '\\' ~[\r\n] )* ["]
+	| ['] ( ~['\r\n\\] | '\\' ~[\r\n] )* [']
+	| [`] ( ~['\r\n\\] | '\\' ~[\r\n] )* [`]
+	;

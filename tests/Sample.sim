@@ -1,0 +1,10 @@
+
+class Sample
+
+	block Init()
+	
+	block DisplayName() : string
+		return "SampleTest"
+	end
+
+end

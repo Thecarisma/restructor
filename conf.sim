@@ -1,0 +1,45 @@
+
+# General Project Description
+final var project = 'Testicles'
+final var copyright = '2019, Azeez Adewale'
+final var author = 'Azeez Adewale'
+final var version = '0.1.0'
+
+# Start Bake configuration
+var BakeConfiguration = [
+	["debug", [
+				["install", false], 
+				["build_folder", "build/debug/"],
+				["architecture", ["x86", "x64"]],
+				["library_link_method", "dynamic"],
+				["resources_folder", "resources/"]
+	]],
+	["release", [
+				["install", false], 
+				["build_folder", "build/release/"],
+				["architecture", ["x86", "x64"]],
+				["library_link_method", "dynamic"],
+				["resources_folder", "resources/"]
+	]],
+	["distributable", [
+				["install", false], 
+				["build_folder", "build/distributable/"],
+				["architecture", ["x86", "x64"]],
+				["library_link_method", "static"],
+				["resources_folder", "resources/"]
+	]
+	]
+]
+# End Bake configuration
+
+# Start Testicles configuration
+var TesticlesConfiguration = [
+	["test_src_folder", "src/"],
+	["test_build_folder", "tests/"],
+	["data_mockup_file", "/tests/MockupDatas.sim"],
+	["ignore", [
+		"SampleIgnore.sim"
+	]]
+]
+# End Testicles configuration
+
