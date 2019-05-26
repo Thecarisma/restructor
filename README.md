@@ -14,10 +14,10 @@ sometimes, most time, every time the test should still be reviewed by real human
 ___
 
 # Table of content
-- [Usage](usage)
+- [Usage](#usage)
 - [Building and Installing](#building-and-installing)
 - [Writing Rules](#writing-rules)
-- [Examples](#examples)
+- [Examples](#example)
 
 # Usage
 
@@ -46,7 +46,7 @@ It will be installed as a simple-lang environment and can be executed like `simp
 
 # Writing Rules
 
-# Examples
+# Example
 
 Generating the test for this project 
 
